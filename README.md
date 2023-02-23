@@ -1,11 +1,11 @@
 # POV Yes
-### Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
+Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
 # 
 <em>
 <h3 align="center">Breathing coral</h1>
 </em>
 
-[HD video](https://www.youtube.com/watch?v=Xfp7ocJBziQ)
+[[HD video]](https://www.youtube.com/watch?v=Xfp7ocJBziQ)
 
 ![coral_01_gh](https://user-images.githubusercontent.com/6688301/220755186-1d8c2540-10c0-40a5-a33d-b13ae04dc0c4.png)
 
