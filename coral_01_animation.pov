@@ -11,14 +11,10 @@
 // e-mail: See posts in news.povray.org
 //
 //------------------------------------------------------------------------
-
 #declare luminosity = 1;
-#include "playground.inc"
-
+#include "include/playground.inc"
+#include "include/colormaps.inc"
 #include "include/yeslib.inc"
-
-#include "colormaps.inc"
-
 
 // Axis
 // axis (2,2,2,0.02)
@@ -39,4 +35,3 @@ light_source {<5,13,10>, rgb <1,1,1> * 0.8 shadowless }
 // Coral
 //
 coral_01(parula,,,,,,y*1.3,,)
-

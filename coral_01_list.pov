@@ -11,13 +11,10 @@
 // e-mail: See posts in news.povray.org
 //
 //------------------------------------------------------------------------
-
 #declare luminosity = 1;
-#include "playground.inc"
-
+#include "include/playground.inc"
+#include "include/colormaps.inc"
 #include "include/yeslib.inc"
-
-#include "colormaps.inc"
 
 
 // Axis
