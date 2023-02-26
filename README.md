@@ -25,6 +25,13 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![stem_01](https://user-images.githubusercontent.com/6688301/221430938-051a47fe-811b-47b2-9169-b55195f42caf.png)
 
 #
+<em>
+<h3 align="center">Weed</h1>
+</em>
+
+![weed_01](https://user-images.githubusercontent.com/6688301/221440652-4f02873f-888c-47c6-9f41-76f768efafe5.png)
+
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
