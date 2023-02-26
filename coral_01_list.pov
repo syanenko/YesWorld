@@ -14,7 +14,7 @@
 #declare luminosity = 1;
 #include "include/playground.inc"
 #include "include/colormaps.inc"
-#include "include/yeslib.inc"
+#include "include/coral_01.inc"
 
 
 // Axis
