@@ -17,6 +17,14 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![fish_13](https://user-images.githubusercontent.com/6688301/221391392-932ca41f-8148-4e78-8015-db9abe4c9ebe.png)
 
 #
+<em>
+<h3 align="center">Growing stem</h1>
+</em>
+
+[[HD video]](https://www.youtube.com/watch?v=OWSPI5r5Msc)
+![stem_01](https://user-images.githubusercontent.com/6688301/221430938-051a47fe-811b-47b2-9169-b55195f42caf.png)
+
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
