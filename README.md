@@ -32,6 +32,13 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![weed_01](https://user-images.githubusercontent.com/6688301/221440652-4f02873f-888c-47c6-9f41-76f768efafe5.png)
 
 #
+<em>
+<h3 align="center">Yes-font</h1>
+</em>
+
+![text](https://user-images.githubusercontent.com/6688301/221582713-fdd4b8b7-da65-4e9a-a57c-b8c28756db38.png)
+
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
