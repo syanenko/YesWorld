@@ -39,6 +39,13 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![text](https://user-images.githubusercontent.com/6688301/221582713-fdd4b8b7-da65-4e9a-a57c-b8c28756db38.png)
 
 #
+<em>
+<h3 align="center">Spiral path</h1>
+</em>
+
+![spral_path](https://user-images.githubusercontent.com/6688301/221648231-f9e00e58-3b8d-4c26-a210-eb9d25d3152f.png)
+
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
