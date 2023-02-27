@@ -76,7 +76,7 @@ camera
 //
 // Lights
 //
-light_source {<0,  10, 0>, rgb <1,1,1> * luminosity shadowless }
+light_source {<0,  10, 0>, rgb <1,1,1> * luminosity  }
 //light_source {<0, -10, 0>, rgb <1,1,1> * luminosity }
 
 light_source {< 10, 0, 0>, rgb <1,1,1> * luminosity shadowless }
