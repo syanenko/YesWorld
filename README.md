@@ -39,7 +39,7 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 <h3 align="center">Fish 14</h1>
 </em>
 
-![fish_14](https://user-images.githubusercontent.com/6688301/222188821-aa866718-8e42-429f-a4b0-33a461dcd3d6.png)
+![fish_14](https://user-images.githubusercontent.com/6688301/222217689-4b6b3823-eca8-4aa7-ab53-fb10599bea99.png)
 ![fish_14_setup](https://user-images.githubusercontent.com/6688301/222195357-e14de6a0-a441-441e-ae99-1f03e91b8bd1.png)
 #
 About POV-Ray:\
