@@ -1,12 +1,7 @@
 # Yes-World
 
 Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
-#
-<em>
-<h3 align="center">Yes-font</h1>
-</em>
-
-![text](https://user-images.githubusercontent.com/6688301/221582713-fdd4b8b7-da65-4e9a-a57c-b8c28756db38.png)
+![logo](https://user-images.githubusercontent.com/6688301/222239250-eb8d355f-b6a2-41db-b745-6155292f8848.png)
 #
 <em>
 <h3 align="center">Breathing coral</h1>
