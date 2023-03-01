@@ -1,7 +1,7 @@
 # Yes-World
 
 Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
-![logo](https://user-images.githubusercontent.com/6688301/222239250-eb8d355f-b6a2-41db-b745-6155292f8848.png)
+![logo](https://user-images.githubusercontent.com/6688301/222240687-925c9301-2a24-4856-9416-012f27132f34.png)
 #
 <em>
 <h3 align="center">Breathing coral</h1>
