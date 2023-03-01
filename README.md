@@ -18,11 +18,8 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 
 ![weed_01](https://user-images.githubusercontent.com/6688301/222216969-0ff89a2f-be95-44a4-9e53-39b784ea757e.png)
 #
-<em>
-<h3 align="center">Fish 13</h1>
-</em>
-
 [[HD video]](https://www.youtube.com/watch?v=NvTMP3XGKms)
+<img align="center" src="https://user-images.githubusercontent.com/6688301/222248516-b816ec55-dabf-4138-928a-5d4a273e2e2d.png">
 ![fish_13](https://user-images.githubusercontent.com/6688301/222217126-877bbf2c-92aa-437a-bc77-d5431eb5a8b2.png)
 #
 <em>
