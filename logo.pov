@@ -1,7 +1,7 @@
 #version 3.7;
 global_settings { assumed_gamma 1 }
 
-#declare luminosity = 1.2;
+#declare luminosity = 1.1;
 #include "include/playground.inc"
 
 #include "include/colormaps.inc"
@@ -20,7 +20,7 @@ camo (<5,0,2>, <0,0,2>, 50)
 //
 // Light
 //
-light_source {<-5,-5,-5>, rgb <1,1,1> * luminosity shadowless}
+light_source {<0,5,5>, rgb <1,1,1> * 5 parallel}
 
 //
 // Background
@@ -49,39 +49,16 @@ background {color srgb<13,17,23> / 256}
 #declare kindlmann        = make_colormap (kindlmann,        _f, _t);
 #declare inferno          = make_colormap (inferno,          _f, _t);
 
-
 //
-// Text
-//
+// Logo
+// 
 text { ttf "classic-yes-font.ttf" "Yes World" 0.1, 0
 
        pigment {
        gradient y
        color_map { kindlmann }
-       scale 2
-       translate -y * 2.8 }
+       scale 1.15
+       translate -y * 0.175 }
 
-       rotate -y * 90
-       translate -y * 0.3 }
-
-text { ttf "classic-yes-font.ttf" "Yes World" 0.1, 0
-
-       pigment {
-       gradient y
-       color_map { ext_kindlmann }
-       scale 1.3
-       translate -y * 0.2 }
-
-       rotate -y * 90
-       translate y * 0.8 }
-
-text { ttf "classic-yes-font.ttf" "Yes World" 0.1, 0
-
-       pigment {
-       gradient y
-       color_map { inferno }
-       scale 1
-       translate y * -0.2 }
-
-       rotate -y * 90
-       translate -y * 1.4 }
+       normal { bumps scale 0.002 }
+       rotate -y * 90 }
