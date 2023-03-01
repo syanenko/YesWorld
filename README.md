@@ -44,9 +44,7 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 </em>
 
 ![fish_14](https://user-images.githubusercontent.com/6688301/222188821-aa866718-8e42-429f-a4b0-33a461dcd3d6.png)
-
 ![fish_14_setup](https://user-images.githubusercontent.com/6688301/222188863-491655c0-c157-459a-ba4f-861a9062f4e2.png)
-
 #
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
