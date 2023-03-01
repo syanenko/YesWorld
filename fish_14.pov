@@ -1,6 +1,11 @@
 //----------- fish out of water v14 ----------- 2/28/23 miller
 global_settings { max_trace_level 5 }
-background {color rgb <0.6, 0.62, 0.62>}
+//
+// Background
+//
+//background {color rgb <0.6, 0.62, 0.62>}
+background {color rgb<13,17,23> / 256}
+
 
 //--- C O L O R S
 #ifndef (Transparent) #declare Transparent = rgbt 1 ;#end
@@ -148,7 +153,7 @@ material {
         light_color * 25                   
         area_light
         <500, 0, 0> <0, 0, 500>         
-        2, 2                          
+        16, 16                          
         adaptive 0                    
         jitter                        
         circular                      
@@ -166,7 +171,7 @@ light_array_1()
         light_color * 5                   
         area_light
         <500, 0, 0> <0, 0, 500>         
-        2, 2                          
+        16, 16                          
         adaptive 0                    
         jitter                        
         circular                      
@@ -184,7 +189,7 @@ light_array_2()
         light_color * 5                   
         area_light
         <500, 0, 0> <0, 0, 500>         
-        2, 2                          
+        16, 16                          
         adaptive 0                    
         jitter                        
         circular                      
@@ -940,9 +945,10 @@ union{
 camera {
     location <2, 2, -18>
     up <0, 1, 0>
-    look_at <1.2 , 3, 0> 
+    look_at <1.35, 3, 0> 
     angle 30
 }
 
-object { fish14() rotate <0,-35,0> scale y*1.2 translate <-2.3,0,-2> }   
-// object { fish14() rotate <0,-30,0> scale y*1.3 translate <1.5,-1,15> } 
+object { fish14() rotate <0,-70,0> scale y*1.2 translate <-2.3,0,-2> }   
+object { fish14() rotate <0,-30,0> scale y*1.3 translate <1.5,-1,15> } 
+  
