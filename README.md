@@ -1,13 +1,12 @@
 ![logo](https://user-images.githubusercontent.com/6688301/222241083-13b92fa4-6e99-4b97-9c7c-dcb78838605f.png)
 
 
+
 Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
 #
-<em>
-<h3 align="center">Breathing coral</h1>
-</em>
-
 [[HD video]](https://www.youtube.com/watch?v=Xfp7ocJBziQ)
+<img align="center" src="https://user-images.githubusercontent.com/6688301/222245133-02bf0ab0-f59a-4b11-af4d-6a4852d2b230.png">
+
 ![coral_01](https://user-images.githubusercontent.com/6688301/222216796-835b7027-bd3d-481a-b71c-37a3f65d0d55.png)
 #
 <em>
