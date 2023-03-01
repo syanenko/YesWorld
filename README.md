@@ -1,6 +1,4 @@
-<em>
-<h1>Yes-World</h1>
-</em>
+# Yes-World
 
 Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
 #
