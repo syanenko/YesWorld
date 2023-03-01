@@ -9,11 +9,9 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 
 ![coral_01](https://user-images.githubusercontent.com/6688301/222216796-835b7027-bd3d-481a-b71c-37a3f65d0d55.png)
 #
-<em>
-<h3 align="center">Growing stem</h1>
-</em>
-
 [[HD video]](https://www.youtube.com/watch?v=OWSPI5r5Msc)
+<img align="center" src="https://user-images.githubusercontent.com/6688301/222246428-3aab58cb-2b17-4bed-a145-26d3ab314983.png">
+
 ![stem_01](https://user-images.githubusercontent.com/6688301/222217082-8ad38b7a-3e5d-4f57-8a6b-e3c3584e1e9b.png)
 #
 <em>
