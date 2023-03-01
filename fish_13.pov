@@ -5,7 +5,7 @@ global_settings { assumed_gamma 1.5 }
 #include "include/playground.inc"
 #include "include/colormaps.inc"
 
-#include "include/fish_13.inc"
+#include "include/fish_13/fish_13.inc"
 
 // Axis
 // axis (60,60,60,1)
