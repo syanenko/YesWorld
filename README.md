@@ -22,9 +22,7 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 <img align="center" src="https://user-images.githubusercontent.com/6688301/222248516-b816ec55-dabf-4138-928a-5d4a273e2e2d.png">
 ![fish_13](https://user-images.githubusercontent.com/6688301/222217126-877bbf2c-92aa-437a-bc77-d5431eb5a8b2.png)
 #
-<em>
-<h3 align="center">Fish 14</h1>
-</em>
+![header_fish_14](https://user-images.githubusercontent.com/6688301/222248516-b816ec55-dabf-4138-928a-5d4a273e2e2d.png)
 
 ![fish_14](https://user-images.githubusercontent.com/6688301/222217689-4b6b3823-eca8-4aa7-ab53-fb10599bea99.png)
 ![fish_14_setup](https://user-images.githubusercontent.com/6688301/222195357-e14de6a0-a441-441e-ae99-1f03e91b8bd1.png)
