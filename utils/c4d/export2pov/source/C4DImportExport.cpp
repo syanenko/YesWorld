@@ -2626,14 +2626,14 @@ Bool AlienSplineObject::Execute()
 	fprintf(file, "#declare points_num = %d;\n\
 #declare points = array mixed [%d][2] {\n", pc, pc);
 
-	printf("Writing data ... \n");
+	printf(" Writing data ... \n");
 	const Vector* p = GetPointR();
 	for (int i = 0; i < pc; ++i)
 	{
 		fprintf(file, "  { %f, <%f, %f, %f>}\n", (double)i / (double)pc, p[i].x, p[i].z, p[i].y);
 	}
 	fprintf(file, "}\n");
-	printf("Done\n");
+	printf(" Done\n");
 
 	// Tags
 	// PrintTagInfo(this);
