@@ -97,6 +97,8 @@ union {
   scale 1.1  
   rotate y * (45 + clock)
   translate <0,0,1.5>
+  // DEBUG: Clock
+  #debug concat("DEBUG:---- Clock: ", str(clock,3,1), "\n")
 }
 
 
@@ -113,10 +115,10 @@ union {
 }
 
 union {
-  object { weed_01 (tex2) scale <1,1,1>        rotate <0, 45, 0>   translate <0,        0,   0>  }
-  object { weed_01 (tex2) scale <0.6,0.8,0.6>  rotate <0, -50, 0>  translate <0.2,      0,   0>  }
+  object { weed_01 (tex2) scale <1,1,1>        rotate <0, 45,   0> translate <0,        0,   0>  }
+  object { weed_01 (tex2) scale <0.6,0.8,0.6>  rotate <0, -50,  0> translate <0.2,      0,   0>  }
   object { weed_01 (tex2) scale <0.5,0.65,0.5> rotate <0, -220, 0> translate <-0.12, -0.1, 0.12> }
-  object { weed_01 (tex2) scale <0.7,0.6,0.7>  rotate <0, 250, 0>  translate <0.1,   -0.1,  0.1> }
+  object { weed_01 (tex2) scale <0.7,0.6,0.7>  rotate <0, 250,  0> translate <0.1,   -0.1,  0.1> }
 
   scale 1.1
   rotate y * (85 + clock)
@@ -159,10 +161,10 @@ union {
 }
 
 union {
-  object { weed_01 (tex4) scale <1,1,1>        rotate <0, 45, 0>   translate <0,       0, 0   > }
-  object { weed_01 (tex4) scale <0.6,0.8,0.6>  rotate <0, -50, 0>  translate <0.2,     -0.1, 0   > }
+  object { weed_01 (tex4) scale <1,1,1>        rotate <0,   45, 0>   translate <0,     0, 0   > }
+  object { weed_01 (tex4) scale <0.6,0.8,0.6>  rotate <0,  -50, 0>  translate <0.2, -0.1, 0   > }
   object { weed_01 (tex4) scale <0.5,0.65,0.5> rotate <0, -220, 0> translate <-0.12,   0, 0.12> }
-  object { weed_01 (tex4) scale <0.7,0.6,0.7>  rotate <0, 250, 0>  translate <0.1,  -0.1, 0.1 > }
+  object { weed_01 (tex4) scale <0.7,0.6,0.7>  rotate <0,  250, 0>  translate <0.1, -0.1, 0.1 > }
 
   scale 1.1
   rotate y * (25 + clock)
@@ -183,10 +185,10 @@ union {
 }
 
 union {
-  object { weed_01 (tex5) scale <1,1,1>        rotate <0, 45, 0>  translate  <0, 0, 0>        }
-  object { weed_01 (tex5) scale <0.6,0.8,0.6>  rotate <0, -50, 0> translate <0.2, 0, 0>       }
+  object { weed_01 (tex5) scale <1,1,1>        rotate <0, 45, 0>   translate <0,         0, 0>    }
+  object { weed_01 (tex5) scale <0.6,0.8,0.6>  rotate <0, -50, 0>  translate <0.2,       0, 0>    }
   object { weed_01 (tex5) scale <0.5,0.65,0.5> rotate <0, -220, 0> translate <-0.12, -0.05, 0.12> }
-  object { weed_01 (tex5) scale <0.7,0.6,0.7>  rotate <0, 250, 0> translate <0.1, -0.1, 0.1>     }
+  object { weed_01 (tex5) scale <0.7,0.6,0.7>  rotate <0, 250, 0>  translate <0.1,   -0.1,  0.1>  }
 
   scale 1.1
   rotate y * (70 + clock)
