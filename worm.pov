@@ -11,11 +11,11 @@ global_settings { assumed_gamma 1 }
 // axis (2,2,2,0.02)
 
 // Cameras
-camo (<1,3,5> * 1.5 , <0,1,0>, 35)
-// camo (<0,5,0> * 1.5, <0,2,0>, 45)
+// camo (<1,3,5> * 1.5 , <0,1,0>, 35)
+camo (<0,5,0> * 1.5, <0,2,0>, 45)
+camo (<5,0,0> * 1.5, <0,2,0>, 45)
 
 //------------------------------------------------------------------------
-
 
 //
 // Colormap
@@ -68,14 +68,14 @@ camo (<1,3,5> * 1.5 , <0,1,0>, 35)
   #declare ang = ang + ang_step;    
   #declare r = r - r_step;
   #declare p = p + 1;
-
-
 #end
 
+#include "include/points.inc"
 
 //
 // Sweep sphere
-//
+//     
+#if (0)
 sphere_sweep {
     b_spline 
     // cubic_spline
@@ -91,8 +91,9 @@ sphere_sweep {
               scale 3.5 
               translate 2.5}
 }
+#end
 
-#if (0)
+#if (1)
 
 //
 // Make spline
