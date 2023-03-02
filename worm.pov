@@ -39,35 +39,71 @@ camo (<1,3,5> * 1.5 , <0,1,0>, 35)
 #declare kindlmann        = make_colormap (kindlmann,        _f, _t);
 #declare inferno          = make_colormap (inferno,          _f, _t);
 
+//
+// Prepare spiral spline points
+//
+#declare r_min = 0;
+#declare r_max = 1;    
+#declare r_step = 0.05;
+
+#declare points_num = (r_max - r_min ) / r_step + 1;
+#declare points = array mixed [points_num][2];
+#debug concat("----- DEBUG: points_num=", str(points_num,5,3), "\n")
+
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare y_step = 0.13;
+
+#declare p = 0;
+#declare r = r_max;
+#while (r >= r_min)
+  #local X = cos(ang) * r; 
+  #local Z = sin(ang) * r;
+  #declare points[p][1] = <X,Y,Z>;
+  #debug concat("----- DEBUG: point=<", vstr(3, points[p][1],",", 0,1), ">\n")
+  #local Y = Y + y_step;
+
+  #declare points[p][0] = ang;
+  #declare ang = ang + ang_step;    
+  #declare r = r - r_step;
+  #declare p = p + 1;
+
+
+#end
+
+
+//
+// Sweep sphere
+//
+sphere_sweep {
+    b_spline 
+    // cubic_spline
+    // linear_spline
+    points_num  
+        #for (i,0,points_num-1)
+            //points[i][1], 0.1
+            points[i][1], 0.2 - points[i][0] / 100
+        #end
+  
+    pigment { gradient -y
+              color_map  { ext_kindlmann }
+              scale 3.5 
+              translate 2.5}
+}
+
+#if (0)
 
 //
 // Make spline
 //
-#declare r = 1;
-#declare r_step = 0.05;
-#declare r_min = 0;
-
-#declare ang = 0;
-#declare ang_step = 1;
-
-#declare Y = 0;
-#declare y_step = 0.13;
-
 #declare _spline =
-spline {
-  natural_spline
-
-#while(r >= r_min)
-  #local X = cos(ang) * r; 
-  #local Z = sin(ang) * r;
-   
-  ang, <X,Y,Z>
-  // #debug concat("----- DEBUG: ang=", str(ang,5,3), " X=" , str(X,5,3), " Y=" , str(Y,5,3), " Z=" , str(Z,5,3)"\n")
-  #local Y = Y + y_step;
-  #declare ang = ang + ang_step;    
-  #declare r = r - r_step;
-#end
-}
+  spline {
+    natural_spline
+      #for (i,0,points_num-1)
+          points[i][0], points[i][1]
+      #end
+  }
 
 //
 // Draw peaks
@@ -161,3 +197,4 @@ sphere_sweep {
             translate 2.2}
 }
 */
+#end
