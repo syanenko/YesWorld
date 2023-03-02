@@ -11,9 +11,9 @@ global_settings { assumed_gamma 1 }
 // axis (2,2,2,0.02)
 
 // Cameras
-// camo (<1,3,5> * 1.5 , <0,1,0>, 35)
-camo (<0,5,0> * 1.5, <0,2,0>, 45)
-camo (<5,0,0> * 1.5, <0,2,0>, 45)
+//camo (<1,3,5> * 1.5 , <0,1,0>, 35)
+//camo (<0,15,0>, <0,2,0>, 45)
+camo (<10,4,0> * 1.5, <0,-0.5,0>, 45)
 
 //------------------------------------------------------------------------
 
@@ -61,7 +61,7 @@ camo (<5,0,0> * 1.5, <0,2,0>, 45)
   #local X = cos(ang) * r; 
   #local Z = sin(ang) * r;
   #declare points[p][1] = <X,Y,Z>;
-  #debug concat("----- DEBUG: point=<", vstr(3, points[p][1],",", 0,1), ">\n")
+  // #debug concat("----- DEBUG: point=<", vstr(3, points[p][1],",", 0,1), ">\n")
   #local Y = Y + y_step;
 
   #declare points[p][0] = ang;
@@ -77,19 +77,18 @@ camo (<5,0,0> * 1.5, <0,2,0>, 45)
 //     
 #if (0)
 sphere_sweep {
-    b_spline 
-    // cubic_spline
+    // b_spline 
+    cubic_spline
     // linear_spline
     points_num  
         #for (i,0,points_num-1)
-            //points[i][1], 0.1
-            points[i][1], 0.2 - points[i][0] / 100
+          points[i][1], points[i][0] / 5 // Center, radius                      
         #end
   
     pigment { gradient -y
               color_map  { ext_kindlmann }
-              scale 3.5 
-              translate 2.5}
+              scale 5 
+              translate 0}
 }
 #end
 
@@ -155,13 +154,17 @@ sphere_sweep {
 //
 // Draw spheres
 //
-declare length = 45;
-#declare r_max = 0.2;
+declare length = 6;
+#declare r_max = 0.24;
 
+#declare c_step = 0.02;
 #declare c = 0;
 #while (c < length)
   #local R = r_max - (c / (pow(length, 1.6)  * r_max));
   #local center = _spline(c);
+  
+  #debug concat("----- DEBUG: center=<", vstr(3, center,",", 0,1), ">\n")  
+  #debug concat("----- DEBUG: R=", str(R,5,3), "\n\n")
 
   sphere {
     center, R
@@ -176,26 +179,7 @@ declare length = 45;
      draw_pins(center, R)
    #end
 
-  #declare c = c + 0.2;
+  #declare c = c + c_step;
 #end
 
-//
-// Sweep
-//
-/*
-#declare c = 0;
-sphere_sweep {
-  linear_spline
-  100,
-  #while (c < 9.9)
-    _spline(c),  0.33 - c / 30
-    #declare c = c + 0.1;
-  #end
-
-  pigment { gradient -y
-            color_map  { ext_kindlmann }
-            scale 3 
-            translate 2.2}
-}
-*/
-#end
+#end // if
