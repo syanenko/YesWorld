@@ -14,6 +14,7 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 
 ![stem_01](https://user-images.githubusercontent.com/6688301/222217082-8ad38b7a-3e5d-4f57-8a6b-e3c3584e1e9b.png)
 #
+[[HD video]](https://www.youtube.com/watch?v=REc3Tk6OzqU)
 <img align="center" src="https://user-images.githubusercontent.com/6688301/222247127-d74dbfb5-a754-4f66-a1b7-27e21f90b110.png">
 
 ![weed_01](https://user-images.githubusercontent.com/6688301/222216969-0ff89a2f-be95-44a4-9e53-39b784ea757e.png)
