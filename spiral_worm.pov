@@ -1,7 +1,7 @@
 #version 3.7;
 global_settings { assumed_gamma 1 }
 
-#declare luminosity = 1.5;
+#declare luminosity = 1.25;
 #include "include/playground.inc"
 #include "include/colormaps.inc"
 
@@ -57,9 +57,9 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_01 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+#declare worm_01 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
                                   Y, Y_step, length, r_max, c_step, pins )
-
 //
 // Worm 02
 //
@@ -75,9 +75,9 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_02 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
-                                  Y, Y_step, length, r_max, c_step, pimns )
-
+#declare worm_02 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, pimns)
 //
 // Worm 03
 //
@@ -93,9 +93,9 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_03 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+#declare worm_03 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
                                   Y, Y_step, length, r_max, c_step, pimns )
-
 //
 // Worm 04
 //
@@ -111,9 +111,9 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_04 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+#declare worm_04 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
                                   Y, Y_step, length, r_max, c_step, pimns )
-
 //
 // Worm 05
 //
@@ -129,7 +129,8 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_05 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+#declare worm_05 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
                                   Y, Y_step, length, r_max, c_step, pimns )
 
 //
@@ -147,7 +148,8 @@ camo (<0,3,6>, <0,1,0>, 43)
 #declare c_step   = 0.2;
 #declare pins     = true;
 
-#declare worm_06 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+#declare worm_06 =  spiral_worm ( ext_kindlmann, ext_kindlmann,
+                                  R, R_min, R_step, ang, ang_step, 
                                   Y, Y_step, length, r_max, c_step, pimns )
 
 //
@@ -159,4 +161,3 @@ object { worm_03 scale 0.4 translate <-1.57, 1.5 ,0> }
 object { worm_04 scale 0.4 translate <1.57, -0.3 ,0> }
 object { worm_05 scale 0.4 translate <0,    -0.3 ,0> }
 object { worm_06 scale 0.4 translate <-1.57,-0.3 ,0> }
-

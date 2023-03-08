@@ -25,7 +25,7 @@
 //
 // Draw pins
 //
-#macro draw_pins(center, R, Y_step)
+#macro draw_pins(cmap, center, R, Y_step)
 
   #declare pin_len  = 3;
   #declare pin_size = 0.2;
@@ -41,7 +41,7 @@
        cone {<X,Y,0>, pin_size, <X,Y,0> * pin_len, 0
 
         pigment { gradient <X,Y,0>
-                  color_map  { ext_kindlmann }
+                  color_map  { cmap }
                   scale 0.7 
                   translate X*Y}
         normal { bumps scale 0.001 }
@@ -50,7 +50,7 @@
        // Sphere
         sphere {<X,Y,0>, pin_size
           pigment { gradient <X,Y,0>
-                    color_map  { ext_kindlmann }
+                    color_map  { cmap }
                     scale 0.6 
                     translate X*Y}
           normal { bumps scale 0.001 }
@@ -70,7 +70,7 @@
 //
 // Draw spheres
 //
-#macro draw_spheres(Y_step, length, r_max, c_step, pimns)
+#macro draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, pimns)
 
   #declare c = 0;
   #while (c < length)
@@ -80,14 +80,14 @@
     sphere {
       center, R
       pigment { gradient -y
-                color_map  { ext_kindlmann }
+                color_map  { cmap_body }
                 scale 26 
                 translate 1 + c}
       normal { bumps scale 0.001 }
      }
   
      #if (R > 0 & pimns)
-       draw_pins(center, R, Y_step)
+       draw_pins(cmap_pins, center, R, Y_step)
      #end
   
     #declare c = c + 0.2;
@@ -97,7 +97,8 @@
 //
 // Spiral worm main
 // 
-#macro spiral_worm ( optional R, optional R_min, optional R_step,
+#macro spiral_worm ( cmap_body, cmap_pins
+                     optional R, optional R_min, optional R_step,
                      optional ang, optional ang_step, optional Y, optional Y_step,
                      optional length, optional r_max, optional c_step, optional pimns )
   // Params 
@@ -145,10 +146,10 @@
     #local pimns = true;
   #end
   
-  // Make 
+  // Make it
   #declare ret = union {
     make_spline ( R, R_min, R_step, ang, ang_step, Y, Y_step)
-    draw_spheres(Y_step, length, r_max, c_step, pimns)
+    draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, pimns)
   }
 
   ret
