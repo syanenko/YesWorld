@@ -8,14 +8,15 @@ global_settings { assumed_gamma 1 }
 #include "include/spiral_worm.inc"
 
 // Axis
-// axis (2,2,2,0.02)
-
-// Cameras
-camo (<1,2,5> * 1.5, <0,1.1,0>, 35)
-// camo (<0,6,0>, <0,0,0>, 45)
+//axis (4,4,4,0.02)
 
 //
-// Colormap
+// Cameras
+// 
+camo (<0,3,6>, <0,1,0>, 43)
+
+//
+// Colormaps
 //
 #declare _f = 0;
 #declare _t = 0;
@@ -40,11 +41,119 @@ camo (<1,2,5> * 1.5, <0,1.1,0>, 35)
 //
 // Play with worm(s)
 //
-#declare Y_step = 0.15;
 
-#declare  worm_01 = union {
+//
+// Worm 01
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
 
-  make_spline(,,,,,,Y_step)
-  draw_spheres(Y_step,,,,,) }
+#declare worm_01 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
 
-object { worm_01 }
+//
+// Worm 02
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
+
+#declare worm_02 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
+
+//
+// Worm 03
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
+
+#declare worm_03 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
+
+//
+// Worm 04
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
+
+#declare worm_04 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
+
+//
+// Worm 05
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
+
+#declare worm_05 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
+
+//
+// Worm 06
+//
+#declare R = 1.3;
+#declare R_min = 0;
+#declare R_step = 0.05;
+#declare ang = 0;
+#declare ang_step = 1;
+#declare Y = 0;
+#declare Y_step =  0.15;
+#declare length = 45;
+#declare r_max = 0.2;
+#declare c_step = 0.2;
+#declare need_pins = true;
+
+#declare worm_06 =  spiral_worm ( R, R_min, R_step, ang, ang_step, 
+                                  Y, Y_step, length, r_max, c_step, need_pins )
+
+
+object { worm_01 scale 0.4 translate <1.57,  1.5 ,0> }
+object { worm_01 scale 0.4 translate <0,     1.5 ,0> }
+object { worm_01 scale 0.4 translate <-1.57, 1.5 ,0> }
+object { worm_01 scale 0.4 translate <1.57, -0.3 ,0> }
+object { worm_01 scale 0.4 translate <0,    -0.3 ,0> }
+object { worm_01 scale 0.4 translate <-1.57,-0.3 ,0> }

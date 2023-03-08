@@ -3,35 +3,8 @@
 //
 // Make spiral spline
 //
-#macro make_spline ( optional R, optional R_min, optional R_step,
-                     optional ang, optional ang_step, 
-                     optional Y, Y_step )
-  // Params 
-  #if (!defined(local.R))
-    #local R = 1.3;
-  #end
+#macro make_spline ( R, R_min, R_step, ang, ang_step, Y, Y_step )
 
-  #if (!defined(local.R_min))
-    #local R_min = 0;
-  #end
-
-  #if (!defined(local.R_step))
-    #local R_step = 0.05;
-  #end
-
-  #if (!defined(local.ang))
-    #local ang = 0;
-  #end
-
-  #if (!defined(local.ang_step))
-    #local ang_step = 1;
-  #end
-
-  #if (!defined(local.Y))
-    #local Y = 0;
-  #end
-          
-  // Spline
   #declare _spline = 
   spline {
     natural_spline
@@ -94,32 +67,11 @@
   }
 #end
 
-
-
 //
 // Draw spheres
 //
-#macro draw_spheres(Y_step, optional length, optional r_max, optional c_step, optional need_pins)
+#macro draw_spheres(Y_step, length, r_max, c_step, need_pins)
 
-  //
-  // Params
-  //
-  #if (!defined(local.length))
-    #local length = 45;
-  #end
-
-  #if (!defined(local.r_max))
-    #local r_max = 0.2;
-  #end
-
-  #if (!defined(local.c_step))
-    #local c_step = 0.2;
-  #end
-
-  #if (!defined(local.need_pins))
-    #local need_pins = true;
-  #end
-  
   #declare c = 0;
   #while (c < length)
     #local R = r_max - (c / (pow(length, 1.6)  * r_max));
@@ -140,4 +92,64 @@
   
     #declare c = c + 0.2;
   #end
+#end
+
+//
+// Spiral worm main
+// 
+#macro spiral_worm ( optional R, optional R_min, optional R_step,
+                     optional ang, optional ang_step, optional Y, optional Y_step,
+                     optional length, optional r_max, optional c_step, optional need_pins )
+  // Params 
+  #if (!defined(local.R))
+    #local R = 1.3;
+  #end
+
+  #if (!defined(local.R_min))
+    #local R_min = 0;
+  #end
+
+  #if (!defined(local.R_step))
+    #local R_step = 0.05;
+  #end
+
+  #if (!defined(local.ang))
+    #local ang = 0;
+  #end
+
+  #if (!defined(local.ang_step))
+    #local ang_step = 1;
+  #end
+
+  #if (!defined(local.Y))
+    #local Y = 0;
+  #end
+
+  #if (!defined(local.Y_step))
+    #local Y_step =  0.15;
+  #end
+
+  #if (!defined(local.length))
+    #local length = 45;
+  #end
+
+  #if (!defined(local.r_max))
+    #local r_max = 0.2;
+  #end
+
+  #if (!defined(local.c_step))
+    #local c_step = 0.2;
+  #end
+
+  #if (!defined(local.need_pins))
+    #local need_pins = true;
+  #end
+  
+  // Make 
+  #declare ret = union {
+    make_spline ( R, R_min, R_step, ang, ang_step, Y, Y_step)
+    draw_spheres(Y_step, length, r_max, c_step, need_pins)
+  }
+
+  ret
 #end
