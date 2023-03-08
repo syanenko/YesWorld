@@ -18,6 +18,11 @@ camo (<10,4,0> * 1.5, <0,-0.5,0>, 45)
 //------------------------------------------------------------------------
 
 //
+// Background
+//
+background {color srgb<13,17,23> / 256}
+
+//
 // Colormap
 //
 #declare _f = 0;
@@ -70,6 +75,7 @@ camo (<10,4,0> * 1.5, <0,-0.5,0>, 45)
   #declare p = p + 1;
 #end
 
+// Use points from imported array
 #include "include/points.inc"
 
 //
