@@ -1,4 +1,20 @@
-#version 3.7;
+//------------------------------------------------------------------------
+//
+// Persistence of Vision Ray Tracer version 3.8
+// Scene Description Language (SDL)
+// 
+// Library of POV-Ray objects inspired by Roger Dean's artworks
+//
+// File: spiral_worm.pov
+// Version: 1.0
+// Last updated: 08-Mar-2023
+//
+// Author: Sergey Yanenko "Yesbird", 2023
+// e-mail: See posts in news.povray.org
+//
+//------------------------------------------------------------------------
+
+#version 3.8;
 global_settings { assumed_gamma 1 }
 
 #declare luminosity = 1.25;
@@ -13,7 +29,7 @@ global_settings { assumed_gamma 1 }
 //
 // Cameras
 // 
-camo (<0,3,6>, <0,1,0>, 43)
+camo (<0,3,6>, <0,1,0>, 48)
 
 //
 // Colormaps
@@ -153,9 +169,9 @@ camo (<0,3,6>, <0,1,0>, 43)
 //
 // Instantiate
 //
-object { worm_01 scale 0.4 translate <1.57,  1.5 ,0> }
-object { worm_02 scale 0.4 translate <0,     1.5 ,0> }
-object { worm_03 scale 0.4 translate <-1.57, 1.5 ,0> }
-object { worm_04 scale 0.4 translate <1.57, -0.3 ,0> }
-object { worm_05 scale 0.4 translate <0,    -0.3 ,0> }
-object { worm_06 scale 0.4 translate <-1.57,-0.3 ,0> }
+object { worm_01 scale 0.4 translate < 1.7, 1.35 ,0> }
+object { worm_02 scale 0.4 translate < 0  , 1.35 ,0> }
+object { worm_03 scale 0.4 translate <-1.7, 1.35 ,0> }
+object { worm_04 scale 0.4 translate < 1.7,-0.25 ,0> }
+object { worm_05 scale 0.4 translate < 0  ,-0.25 ,0> }
+object { worm_06 scale 0.4 translate <-1.7,-0.25 ,0> }

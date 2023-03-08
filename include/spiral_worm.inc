@@ -1,3 +1,19 @@
+//------------------------------------------------------------------------
+//
+// Persistence of Vision Ray Tracer version 3.8
+// Scene Description Language (SDL)
+// 
+// Library of POV-Ray objects inspired by Roger Dean's artworks
+//
+// File: spiral_worm.inc
+// Version: 1.0
+// Last updated: 08-Mar-2023
+//
+// Author: Sergey Yanenko "Yesbird", 2023
+// e-mail: See posts in news.povray.org
+//
+//------------------------------------------------------------------------
+
 #include "math.inc"
 
 //
@@ -95,7 +111,7 @@
 #end
 
 //
-// Spiral worm main
+// Main
 // 
 #macro spiral_worm ( cmap_body, cmap_pins
                      optional R, optional R_min, optional R_step,
