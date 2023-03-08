@@ -70,7 +70,7 @@
 //
 // Draw spheres
 //
-#macro draw_spheres(Y_step, length, r_max, c_step, need_pins)
+#macro draw_spheres(Y_step, length, r_max, c_step, pimns)
 
   #declare c = 0;
   #while (c < length)
@@ -86,7 +86,7 @@
       normal { bumps scale 0.001 }
      }
   
-     #if (R > 0 & need_pins)
+     #if (R > 0 & pimns)
        draw_pins(center, R, Y_step)
      #end
   
@@ -99,7 +99,7 @@
 // 
 #macro spiral_worm ( optional R, optional R_min, optional R_step,
                      optional ang, optional ang_step, optional Y, optional Y_step,
-                     optional length, optional r_max, optional c_step, optional need_pins )
+                     optional length, optional r_max, optional c_step, optional pimns )
   // Params 
   #if (!defined(local.R))
     #local R = 1.3;
@@ -141,14 +141,14 @@
     #local c_step = 0.2;
   #end
 
-  #if (!defined(local.need_pins))
-    #local need_pins = true;
+  #if (!defined(local.pimns))
+    #local pimns = true;
   #end
   
   // Make 
   #declare ret = union {
     make_spline ( R, R_min, R_step, ang, ang_step, Y, Y_step)
-    draw_spheres(Y_step, length, r_max, c_step, need_pins)
+    draw_spheres(Y_step, length, r_max, c_step, pimns)
   }
 
   ret
