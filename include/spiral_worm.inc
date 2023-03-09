@@ -41,11 +41,8 @@
 //
 // Draw pins
 //
-#macro draw_pins(cmap, center, R, Y_step)
+#macro draw_pins(cmap, center, R, Y_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
 
-  #declare pin_len  = 3;
-  #declare pin_size = 0.2;
-  #declare pins_num = 8;
   #declare ang_step = 360 / pins_num;
   #declare ang = 0;
   #union  {
@@ -54,25 +51,33 @@
       #local Y = sind(ang) * R;
 
        // Cone
-       cone {<X,Y,0>, pin_size, <X,Y,0> * pin_len, 0
-
-        pigment { gradient <X,Y,0>
-                  color_map  { cmap }
-                  scale 0.7 
-                  translate X*Y}
-        normal { bumps scale 0.001 }
-       }                                   
+       #if (pins)
+         cone { <X,Y,0>, pin_size, <X,Y,0> * pin_len, 0
+  
+          pigment { gradient <X,Y,0>
+                    color_map  { cmap }
+                    scale 0.7 
+                    translate X*Y}
+          normal { bumps scale 0.001 }
+         }                                   
+       #end
 
        // Sphere
-        sphere {<X,Y,0>, pin_size
+       #if (lumps)
+        sphere {<X,Y,0>, lump_size
           pigment { gradient <X,Y,0>
                     color_map  { cmap }
                     scale 0.6 
                     translate X*Y}
           normal { bumps scale 0.001 }
-      }
+       }
+       #end
 
       // #debug concat("----- DEBUG: ang=", str(ang,5,3), " X=",  str(X,5,3), "\n")
+      // #debug concat("----- DEBUG: lump_size=", str(lump_size,5,3), "\n")
+      // #debug concat("----- DEBUG: pin_size=", str(pin_size,5,3), "\n")
+
+
       #declare ang = ang + ang_step;
     #end
 
@@ -86,7 +91,7 @@
 //
 // Draw spheres
 //
-#macro draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, pimns)
+#macro draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
 
   #declare c = 0;
   #while (c < length)
@@ -102,11 +107,11 @@
       normal { bumps scale 0.001 }
      }
   
-     #if (R > 0 & pimns)
-       draw_pins(cmap_pins, center, R, Y_step)
+     #if (R > 0)
+       draw_pins(cmap_pins, center, R, Y_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
      #end
   
-    #declare c = c + 0.2;
+    #declare c = c + c_step;
   #end
 #end
 
@@ -116,7 +121,8 @@
 #macro spiral_worm ( cmap_body, cmap_pins
                      optional R, optional R_min, optional R_step,
                      optional ang, optional ang_step, optional Y, optional Y_step,
-                     optional length, optional r_max, optional c_step, optional pimns )
+                     optional length, optional r_max, optional c_step, optional lumps, optional lump_size
+                     optional pins, optional pin_size, optional pin_len, optional pins_num )
   // Params 
   #if (!defined(local.R))
     #local R = 1.3;
@@ -158,14 +164,38 @@
     #local c_step = 0.2;
   #end
 
-  #if (!defined(local.pimns))
-    #local pimns = true;
+  #if (!defined(local.lumps))
+    #local lumps = true;
+  #end
+
+  #if (!defined(local.lump_size))
+    #local lump_size = 3;
+  #end
+
+#if (!defined(local.lump_size))
+    #local lump_size = true;
+  #end
+
+  #if (!defined(local.pins))
+    #local pins = true;
+  #end
+  
+  #if (!defined(local.pin_size))
+    #local pin_size = 3;
+  #end
+  
+  #if (!defined(local.pin_len))
+    #local pin_len = 0.2;
+  #end
+  
+  #if (!defined(local.pins_num))
+    #local pins_num = 8;
   #end
   
   // Make it
   #declare ret = union {
     make_spline ( R, R_min, R_step, ang, ang_step, Y, Y_step)
-    draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, pimns)
+    draw_spheres(cmap_body, cmap_pins, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
   }
 
   ret
