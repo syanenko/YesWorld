@@ -30,10 +30,10 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 #
 <img align="center" src="https://user-images.githubusercontent.com/6688301/223888870-e43e7fa3-70aa-4168-bbcb-6fd3198c841a.png">
 
-![spiral_worm](https://user-images.githubusercontent.com/6688301/223889774-b76bffbc-174e-41df-b3f1-a3fe100bd366.png)
+![spiral_worm](https://user-images.githubusercontent.com/6688301/223911982-722274ae-4349-4e98-9b51-235289aa5965.png)
 \
 \
-![spiral_worm_top](https://user-images.githubusercontent.com/6688301/223905703-d8330890-c7f2-4cf1-b472-a5adaa2b5d9b.png)
+![spiral_worm_top](https://user-images.githubusercontent.com/6688301/223911997-01b20635-10cc-445f-a1e4-8db1add22003.png)
 #
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
