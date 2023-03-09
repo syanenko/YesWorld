@@ -1,5 +1,4 @@
-![logo](https://user-images.githubusercontent.com/6688301/222241083-13b92fa4-6e99-4b97-9c7c-dcb78838605f.png)
-
+![yes_logo](https://user-images.githubusercontent.com/6688301/223912925-d42af80f-c8e2-4706-b8c3-5a5316cad03e.png)
 
 
 Collection of [POV-Ray](http://www.povray.org/) animated and static objects inspired by [Roger Dean](https://www.rogerdean.com/)'s artworks.
