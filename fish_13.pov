@@ -19,7 +19,6 @@ camo(<-200, 0, 0>, <3, 0, -4>, 60)
 light_source { <-2000, 100, -100> <1,1,1> shadowless }
 light_source { <1000, 500, 400>  <1,1,1>  }
 
-
 //
 // Background
 //
