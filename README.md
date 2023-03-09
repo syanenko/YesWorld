@@ -28,6 +28,10 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![fish_14](https://user-images.githubusercontent.com/6688301/222217689-4b6b3823-eca8-4aa7-ab53-fb10599bea99.png)
 ![fish_14_setup](https://user-images.githubusercontent.com/6688301/222195357-e14de6a0-a441-441e-ae99-1f03e91b8bd1.png)
 #
+<img align="center" src="https://user-images.githubusercontent.com/6688301/223888870-e43e7fa3-70aa-4168-bbcb-6fd3198c841a.png">
+
+![spiral_worm](https://user-images.githubusercontent.com/6688301/223889774-b76bffbc-174e-41df-b3f1-a3fe100bd366.png)
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
