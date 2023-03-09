@@ -57,8 +57,8 @@ text { ttf "classic-yes-font.ttf" "Yes World" 0.1, 0
        pigment {
        gradient y
        color_map { kindlmann }
-       scale 1.15
-       translate -y * 0.175 }
+       scale 1.7
+       translate -y * 0.58 }
 
        normal { bumps scale 0.002 }
        rotate -y * 90 }
