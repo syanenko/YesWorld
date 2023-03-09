@@ -29,7 +29,8 @@ global_settings { assumed_gamma 1 }
 //
 // Cameras
 // 
-camo (<0,3,6>, <0,1,0>, 48)
+camo (<0,3,6>, <0,1,0>, 48)     // Standard view
+// camo (<0,13,0>, <0,0,1>, 26) // Top view
 
 //
 // Colormaps
@@ -223,3 +224,13 @@ object { worm_03 scale 0.4 translate <-1.85, 1.4 ,0> }
 object { worm_04 scale 0.4 translate < 1.7, -0.25 ,0> }
 object { worm_05 scale 0.4 translate < -0.1,-0.25 ,0> }
 object { worm_06 scale 0.4 translate <-1.9, -0.12 ,0> }
+
+
+/* Top view
+object { worm_01 scale 0.4 translate < 1.7,  1.3  ,1.6> }
+object { worm_02 scale 0.4 translate < -0.1 ,1.35 ,1.6> }
+object { worm_03 scale 0.4 translate <-1.85, 1.4  ,1.6> }
+object { worm_04 scale 0.4 translate < 1.7, -0.25 ,0> }
+object { worm_05 scale 0.4 translate < -0.1,-0.25 ,0> }
+object { worm_06 scale 0.4 translate <-1.9, -0.12 ,0> }
+*/
