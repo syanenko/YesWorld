@@ -33,8 +33,7 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 ![spiral_worm](https://user-images.githubusercontent.com/6688301/223889774-b76bffbc-174e-41df-b3f1-a3fe100bd366.png)
 \
 \
-\
-![spiral_worm_top](https://user-images.githubusercontent.com/6688301/223904328-cfe39c0c-61e9-402a-abf3-43dd2b160172.png)
+![spiral_worm_top](https://user-images.githubusercontent.com/6688301/223905703-d8330890-c7f2-4cf1-b472-a5adaa2b5d9b.png)
 #
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
