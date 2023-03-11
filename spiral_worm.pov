@@ -87,7 +87,7 @@ background {color srgb<13,17,23> / 256}
 #declare cmap_pins = hsv;
 
 #declare worm_01 =  spiral_worm ( cmap_body, cmap_pins,
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Worm 02
@@ -109,10 +109,10 @@ background {color srgb<13,17,23> / 256}
 #declare pin_len  = 3;
 #declare pins_num = 8;
 #declare cmap_body = ext_kindlmann;
-#declare cmap_pins = ext_kindlmann; 
+#declare cmap_pins = ext_kindlmann;
 
 #declare worm_02 =  spiral_worm ( cmap_body, cmap_pins,
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Worm 03
@@ -137,7 +137,7 @@ background {color srgb<13,17,23> / 256}
 #declare cmap_pins = kindlmann;
 
 #declare worm_03 =  spiral_worm ( cmap_body, cmap_pins,
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Worm 04
@@ -159,11 +159,10 @@ background {color srgb<13,17,23> / 256}
 #declare pin_len  = 3.3;
 #declare pins_num = 8;
 #declare cmap_body = ext_kindlmann;
-#declare cmap_pins = ext_kindlmann; 
-
+#declare cmap_pins = ext_kindlmann;
 
 #declare worm_04 =  spiral_worm ( cmap_body, cmap_pins, 
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Worm 05
@@ -188,7 +187,7 @@ background {color srgb<13,17,23> / 256}
 #declare cmap_pins = ext_kindlmann; 
 
 #declare worm_05 =  spiral_worm ( cmap_body, cmap_pins,
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Worm 06
@@ -213,12 +212,11 @@ background {color srgb<13,17,23> / 256}
 #declare cmap_pins = viridis;
 
 #declare worm_06 =  spiral_worm ( cmap_body, cmap_pins,
-                                  R, R_min, R_step, ang, ang_step, 
+                                  R, R_min, R_step, ang, ang_step,
                                   Y, Y_step, length, r_max, c_step, lumps, lump_size, pins, pin_size, pin_len, pins_num )
 //
 // Instantiate
 //
-/* */
 object { worm_01 scale 0.4 rotate y*clock translate < 1.7,  1.3 ,0> }
 object { worm_02 scale 0.4 rotate y*clock translate < -0.1 ,1.35 ,0> }
 object { worm_03 scale 0.4 rotate y*clock translate <-1.85, 1.4 ,0> }
