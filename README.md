@@ -22,13 +22,13 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 <img align="center" src="https://user-images.githubusercontent.com/6688301/222248516-b816ec55-dabf-4138-928a-5d4a273e2e2d.png">
 ![fish_13](https://user-images.githubusercontent.com/6688301/222217126-877bbf2c-92aa-437a-bc77-d5431eb5a8b2.png)
 #
+[[HD video]](https://www.youtube.com/watch?v=JomLeE21Wic)
 <img align="center" src="https://user-images.githubusercontent.com/6688301/222250669-80c9d6bc-6d9f-42b5-a934-62b144d29d9f.png">
-
 ![fish_14](https://user-images.githubusercontent.com/6688301/222217689-4b6b3823-eca8-4aa7-ab53-fb10599bea99.png)
 ![fish_14_setup](https://user-images.githubusercontent.com/6688301/222195357-e14de6a0-a441-441e-ae99-1f03e91b8bd1.png)
 #
+[[HD video]](https://www.youtube.com/watch?v=_ZGjlTH7dw8)
 <img align="center" src="https://user-images.githubusercontent.com/6688301/223888870-e43e7fa3-70aa-4168-bbcb-6fd3198c841a.png">
-
 ![spiral_worm](https://user-images.githubusercontent.com/6688301/223911982-722274ae-4349-4e98-9b51-235289aa5965.png)
 \
 \
@@ -46,5 +46,9 @@ Animation: [https://povlab.online/animtutorial/](https://povlab.online/povtutori
 Isosurfaces: [https://povlab.online/isotutorial/](https://povlab.online/isotutorial/)
 
 Videos: [POV-Ray channel on Youtube](https://www.youtube.com/playlist?list=PL_L-Rlt-OWoJm6HN9t-hxXRk-b6SONXbJ)
+
+Related sites:\
+Mike Miller: [headspin + studio](https://639cef3628e1f.site123.me)\
+Yesbird: [yesbird.ru](https://yesbird.ru)
 
 Contact me at: [LinkedIn](https://www.linkedin.com/in/sergey-yanenko-57b21a96/)
