@@ -25,7 +25,7 @@ light_source {<5,5,5>, rgb <1,1,1> * luminosity shadowless}
 //
 // Background
 //
-background {color srgb<13,17,23> / 256}
+background {color rgb<13,17,23> / 256}
 
 //
 // Colormap
