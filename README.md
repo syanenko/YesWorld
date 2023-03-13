@@ -47,4 +47,8 @@ Isosurfaces: [https://povlab.online/isotutorial/](https://povlab.online/isotutor
 
 Videos: [POV-Ray channel on Youtube](https://www.youtube.com/playlist?list=PL_L-Rlt-OWoJm6HN9t-hxXRk-b6SONXbJ)
 
+Related sites:\
+Mike Miller: [headspin + studio](https://639cef3628e1f.site123.me)\
+Yesbird: [yesbird.ru](https://yesbird.ru)
+
 Contact me at: [LinkedIn](https://www.linkedin.com/in/sergey-yanenko-57b21a96/)
