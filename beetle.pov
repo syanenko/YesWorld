@@ -3,21 +3,15 @@
 
 #version 3.8; 
 #declare quality = 0;    
-#declare use_area_lights = 1;    
+// #declare use_area_lights = 1;    
 #declare light_adaptive = 1; 
 #declare Norm = <0,0,0>;
 
 global_settings {    
     max_trace_level 5
-    ambient_light <.05,.05,.07> * 1
+    ambient_light <.05,.05,.07> * 15
     assumed_gamma 1.5
 }                        
-
-#declare luminosity = 0;
-#include "include/playground.inc"
-
-// Axis
-// axis (50,50,50,1)
 
 //
 // Background
@@ -30,7 +24,7 @@ global_settings {
 //------------------------------------------------------------------------------------------ 
 
 #declare show_fog = false;
-//#include "sky.inc"
+//#include "include/beetle/sky.inc"
 //object { skydome no_shadow }
 
 
@@ -39,7 +33,7 @@ global_settings {
 //------------------------------------------------------------------------------------------ 
 
 #declare array_count = 2;
-#declare intencity = 20;
+#declare intencity = 1;
 
 // --- S K Y  L I G H T 1
 #macro light_S1 ()
@@ -57,7 +51,7 @@ light_source {
     translate <200, 0, 0>
 }   
 #end
-light_S1()
+// light_S1()
 
 
 // --- S K Y  L I G H T 2
@@ -76,7 +70,7 @@ light_source {
     translate <0, 200, 0>
 }   
 #end
-light_S2()
+// light_S2()
 
 
 // --- S K Y  L I G H T 3
@@ -95,7 +89,7 @@ light_source {
     translate <0, 10, 200>
 }   
 #end
-light_S3()
+// light_S3()
 
 
 // --- S K Y  L I G H T 4
@@ -111,7 +105,7 @@ light_source {
     jitter                        
     circular                      
     orient                        
-    translate <125,35,125>
+    translate <125,80,125> // Camera
 }   
 #end
 light_S4()
@@ -160,7 +154,7 @@ light_source {
 #include "include/beetle/beetle.inc"
 #include "include/beetle/tools.inc"
 
-object { beetle translate <-52,0,0>  rotate -y*clock}
+object { beetle translate <-52,0,0> rotate -y * (clock + 160)}
        
 
 // -----------------------------------------------------------------------------------------
@@ -201,6 +195,20 @@ object { beetle translate <-52,0,0>  rotate -y*clock}
 // render_top_right(pers_fov,<60,2,0>) 
 // render_ground_left(pers_fov,<30,10,0>)
 
+
+#declare luminosity = 1;
+#include "include/playground.inc"
+
+// Axis
+// axis (50,50,50,1)
+
+// Additional Light
+light_source {<-100,120,100>, rgb <1,1,1> * 1.2 }
+light_source {<50,-50,50>, rgb <1,1,1> * 0.2 }
+
+// light_source {<125,3,100>, rgb <1,1,1> * 0.1}
+
 //camo(<0,100,0>,<0,0,0>,50)
 //camo(<100,0,0>,<0,0,0>,50)
-camp(<125,110,125> ,<0,10,0>,35)
+camp(<125,110,125> * 1.1 ,<0,8.5,0>, 35)
+
