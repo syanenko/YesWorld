@@ -34,6 +34,10 @@ Collection of [POV-Ray](http://www.povray.org/) animated and static objects insp
 \
 ![spiral_worm_top](https://user-images.githubusercontent.com/6688301/223911997-01b20635-10cc-445f-a1e4-8db1add22003.png)
 #
+[[HD video]](https://www.youtube.com/watch?v=YRxRznkDpfY)
+<img align="center" src="https://user-images.githubusercontent.com/6688301/225546040-ba006c81-5579-4083-91ba-ce8878be73b7.png">
+![beetle](https://user-images.githubusercontent.com/6688301/225546288-92a343b0-5731-4b92-9bc3-f2331a24ed4f.png)
+#
 About POV-Ray:\
 Officail site: [povray.org](http://www.povray.org)\
 Documentation: [wiki.povray.org](https://wiki.povray.org/content/Documentation:Contents)\
