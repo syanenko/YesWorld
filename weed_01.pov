@@ -5,7 +5,6 @@ global_settings { assumed_gamma 1.9 }
 #include "include/playground.inc"
 
 #include "include/colormaps.inc"
-#include "shapes3.inc"
 
 //
 // Axis
