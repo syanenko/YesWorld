@@ -76,14 +76,14 @@ camera
 //
 // Lights
 //
-light_source {<0,  150, 0>, rgb <1,1,1> * luminosity }
-// light_source {<0, -120, 0>, rgb <1,1,1> * luminosity }
+light_source {<0,  10, 0>, rgb <1,1,1> * luminosity  shadowless}
+// light_source {<0, -10, 0>, rgb <1,1,1> * luminosity  shadowless}
 
-light_source {< 150, 0, 0>, rgb <1,1,1> * luminosity }
-// light_source {<-120, 0, 0>, rgb <1,1,1> * luminosity }
+light_source {< 10, 0, 0>, rgb <1,1,1> * luminosity  shadowless}
+//light_source {<-10, 0, 0>, rgb <1,1,1> * luminosity  shadowless}
 
-light_source {<0, 0, 150>, rgb <1,1,1> * luminosity }
-// light_source {<0, 0, -120>, rgb <1,1,1> * luminosity }
+light_source {<0, 0, 10>,  rgb <1,1,1> * luminosity  shadowless}
+//light_source {<0, 0, -10>, rgb <1,1,1> * luminosity  shadowless}
 
 
 //------------------------------------------------------------------------

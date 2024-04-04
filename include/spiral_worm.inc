@@ -41,7 +41,7 @@
 //
 // Draw pins
 //
-#macro draw_pins(cmap, center, R, Y_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
+#macro draw_pins( ccmap, center, R, Y_step, lumps, lump_size, pins, pin_size, pin_len, pins_num)
 
   #declare ang_step = 360 / pins_num;
   #declare ang = 0;
@@ -55,7 +55,7 @@
          cone { <X,Y,0>, pin_size, <X,Y,0> * pin_len, 0
   
           pigment { gradient <X,Y,0>
-                    color_map  { cmap }
+                    color_map  {ccmap }
                     scale 0.7 
                     translate X*Y}
           normal { bumps scale 0.001 }
@@ -66,7 +66,7 @@
        #if (lumps)
         sphere {<X,Y,0>, lump_size
           pigment { gradient <X,Y,0>
-                    color_map  { cmap }
+                    color_map  { ccmap }
                     scale 0.6 
                     translate X*Y}
           normal { bumps scale 0.001 }
